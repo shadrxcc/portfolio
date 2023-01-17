@@ -25,7 +25,7 @@ const Project = () => {
             <p className="text-white text-sm opacity-25">{project.description}</p>
         </div>
         <div>
-            <p className="text-white opacity-50">{project.stack}</p>
+            <p className="text-white text-base opacity-50">{project.stack}</p>
         </div>
       </div>
     );
