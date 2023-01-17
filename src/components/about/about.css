@@ -1,0 +1,36 @@
+.summary {
+    font-family: 'Rota';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+color: rgba(255, 255, 255, 0.75);
+}
+
+.stackcard,
+.softskills-card {
+  width: 322px;
+  color: white;
+  height: 146px;
+  background: #2c2c2c;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+p.stacks {
+    /* font-family: 'Rota'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.stack-title {
+    padding: 24px 0 0;
+}
+
+.stacksoft {
+    padding: 0 22px;
+}
