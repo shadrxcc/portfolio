@@ -1,12 +1,11 @@
 import React from 'react'
-import Project from '../components/project/project'
+import Project from '../components/projects/project'
 
 const Projects = () => {
   return (
-    <div>
-        <div><p className="project-header text-white">Projects</p></div>
-        <Project/>
-    </div>
+    <>
+    <Project/>
+    </>
   )
 }
 

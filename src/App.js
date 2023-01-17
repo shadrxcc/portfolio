@@ -18,7 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <p className=''>hello</p>
+      <p className='text-purple-700'>hello</p>
     </div>
   );
 }
