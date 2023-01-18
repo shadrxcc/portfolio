@@ -1,7 +1,7 @@
 export const projectarr = [
     {
         title: "metabnb",
-        description: "Luxury and affordable houses in the metaverse",
+        description: "Luxury houses in the metaverse",
         stack: "REACTJS",
         live: "https://metabnb-hng9.netlify.app",
         github: "https://github.com/shadrxcc/metabnb",

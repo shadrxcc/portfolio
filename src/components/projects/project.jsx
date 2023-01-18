@@ -10,7 +10,7 @@ const Project = () => {
       <div className="card rounded-[5px] flex flex-col gap-y-[0.9em] p-4 bg-[#1e1e1e]">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-white text-lg font-semibold">{project.title}</p>
+            <p className="text-white  text-xl font-medium">{project.title}</p>
           </div>
           <div className="flex gap-x-2 items-center">
             <Link to={project.live}>
@@ -22,10 +22,10 @@ const Project = () => {
           </div>
         </div>
         <div>
-            <p className="text-white text-sm opacity-25">{project.description}</p>
+            <p className="text-white text-[0.75rem] opacity-25">{project.description}</p>
         </div>
         <div>
-            <p className="text-white text-base opacity-50">{project.stack}</p>
+            <p className="text-white text-sm opacity-50">{project.stack}</p>
         </div>
       </div>
     );
@@ -33,7 +33,7 @@ const Project = () => {
   return (
     <div className="mx-[36px]">
       <div>
-        <p className="text-white text-2xl font-bold">Projects</p>
+        <p className="text-white text-lg font-semibold">Projects</p>
       </div>
       <div className="cards grid gap-3 md:grid-cols-3 md:grid-rows-3 ">{projectmap}</div>
     </div>

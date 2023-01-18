@@ -15,17 +15,17 @@ const skillstack = [
 const Skillstack = () => {
   const skills = skillstack.map((skill, id) => {
     return (
-      <div className="card rounded-[5px] flex flex-col gap-y-[0.9em] p-4 bg-[#1e1e1e]">
+      <div className="card rounded-[5px] h-36 flex flex-col gap-y-[0.9em] p-4 bg-[#1e1e1e]">
         <div>
-          <p className="text-white text-lg font-semibold">{skill.title}</p>
+          <p className="text-white text-xl font-medium">{skill.title}</p>
         </div>
         <div>
-          <p className="text-white text-sm opacity-50">{skill.body}</p>
+          <p className="text-white text-[0.75rem] opacity-50">{skill.body}</p>
         </div>
       </div>
     );
   });
-  return <div className="skillcards  grid gap-3 md:grid-cols-2 md:grid-rows-2 ">{skills}</div>;
+  return <div className="skillcards my-5 grid gap-3 md:grid-cols-2 md:grid-rows-2 ">{skills}</div>;
 };
 
 export default Skillstack;
