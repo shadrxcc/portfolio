@@ -15,7 +15,7 @@ const skillstack = [
 const Skillstack = () => {
   const skills = skillstack.map((skill, id) => {
     return (
-      <div className="card rounded-[5px] h-36 flex flex-col gap-y-[0.9em] p-4 bg-[#1e1e1e]">
+      <div className="card rounded-[5px] h-36 flex flex-col gap-y-[0.9em] p-4 bg-[#1e1e1e]" key={id}>
         <div>
           <p className="text-white text-xl font-medium">{skill.title}</p>
         </div>

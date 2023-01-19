@@ -21,7 +21,7 @@ class Navbar extends Component {
 <img src={logo} alt="logo" />
         </div>
 <nav>
-            <ul id="navbar" className={`${this.state.clicked ? "#navbar active" : "#navbar"} text-white flex flex-col mt-[15em] gap-[2em] md:mt-0 items-center md:bg-inherit bg-[rgba(23, 23, 23)] w-[100%] right-[0px] h-[100vh] fixed md:relative md:top-0 top-[-100em] md:flex-row`}> 
+            <ul id="navbar" className={`${this.state.clicked ? "#navbar active" : "#navbar"} bg-[rgba(23, 23, 23)] text-white flex flex-col mt-[15em] gap-[2em] md:mt-0 items-center md:bg-inherit bg-[rgba(23, 23, 23)] w-[100%] right-[0px] h-[100vh] fixed md:relative md:top-0 top-[-100em] md:flex-row`}> 
                 <li className='active'><a href="/">Projects</a></li>
                 <li className='active'><a href="/">About</a></li>
                 <li className='active'><a href="/">Contact</a></li>

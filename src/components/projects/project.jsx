@@ -35,7 +35,7 @@ const Project = () => {
       <div>
         <p className="text-white text-lg font-semibold">Projects</p>
       </div>
-      <div className="cards grid gap-3 md:grid-cols-3 md:grid-rows-3 ">{projectmap}</div>
+      <div className="cards grid gap-3 md:grid-cols-3">{projectmap}</div>
     </div>
   );
 };
