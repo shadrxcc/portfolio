@@ -25,7 +25,7 @@ const Skillstack = () => {
       </div>
     );
   });
-  return <div className="skillcards my-5 grid gap-3 md:grid-cols-2 md:grid-rows-2 ">{skills}</div>;
+  return <div className="skillcards my-5 grid gap-3 md:grid-cols-2">{skills}</div>;
 };
 
 export default Skillstack;

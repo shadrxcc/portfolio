@@ -11,15 +11,15 @@ import Footer from "./components/footer";
 const RouteSwitch = () => {
   return (
     <>
-    <div className="flex flex-col gap-[10em]">
+    <div className="flex flex-col gap-[6em]">
       <Navbar/>
       <Routes>
         <Route path="/projects" element={<Projects/>}></Route>
         <Route path="/about" element={<About/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="/footer" element={<Footer/>}></Route>
       </Routes>
+      <Footer/>
 </div>
     </>
   );
