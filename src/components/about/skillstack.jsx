@@ -1,7 +1,7 @@
 import React from "react";
 
 const skillstack = [
-    {
+  {
     title: "Soft Skills",
     body: "TEAM PLAYER + ADAPTABILITY + COMMUNICATION + PATIENCE + PROBLEM-SOLVING + RELIABLE",
   },
@@ -15,7 +15,10 @@ const skillstack = [
 const Skillstack = () => {
   const skills = skillstack.map((skill, id) => {
     return (
-      <div className="card rounded-[5px] h-36 flex flex-col gap-y-[0.9em] p-4 bg-[#1e1e1e]" key={id}>
+      <div
+        className="card rounded-[5px] h-36 flex flex-col gap-y-[0.9em] p-4 bg-[#1e1e1e]"
+        key={id}
+      >
         <div>
           <p className="text-white text-xl font-medium">{skill.title}</p>
         </div>
@@ -25,7 +28,9 @@ const Skillstack = () => {
       </div>
     );
   });
-  return <div className="skillcards my-5 grid gap-3 md:grid-cols-2">{skills}</div>;
+  return (
+    <div className="skillcards my-5 grid gap-3 md:grid-cols-2">{skills}</div>
+  );
 };
 
 export default Skillstack;

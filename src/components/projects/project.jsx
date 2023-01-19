@@ -22,10 +22,12 @@ const Project = () => {
           </div>
         </div>
         <div>
-            <p className="text-white text-[0.75rem] opacity-25">{project.description}</p>
+          <p className="text-white text-[0.75rem] opacity-25">
+            {project.description}
+          </p>
         </div>
         <div>
-            <p className="text-white text-sm opacity-50">{project.stack}</p>
+          <p className="text-white text-sm opacity-50">{project.stack}</p>
         </div>
       </div>
     );
@@ -33,7 +35,7 @@ const Project = () => {
   return (
     <div className="mx-[36px]">
       <div>
-        <p className="text-white text-lg font-semibold">Projects</p>
+        <p className="text-white text-lg pb-2 font-semibold">Projects</p>
       </div>
       <div className="cards grid gap-3 md:grid-cols-3">{projectmap}</div>
     </div>
