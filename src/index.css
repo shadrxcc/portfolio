@@ -11,6 +11,11 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: rgba(23,23,23);
+  background: rgba(23, 23, 23);
   font-family: rota;
+}
+
+#navbar.active {
+  top: 80px;
+  transition: 0.5s ease-in-out
 }
