@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Project = () => {
   const projectmap = projectarr.map((project, id) => {
     return (
-      <div className="card rounded-[5px] flex flex-col gap-y-[0.9em] p-4 bg-[#1e1e1e]">
+      <div className="card rounded-[5px] flex flex-col gap-y-[2em] p-4 bg-[#1e1e1e]">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-white  text-xl font-medium">{project.title}</p>
@@ -22,12 +22,12 @@ const Project = () => {
           </div>
         </div>
         <div>
-          <p className="text-white text-[0.75rem] opacity-25">
+          <p className="text-white text-[1.1rem] opacity-50">
             {project.description}
           </p>
         </div>
         <div>
-          <p className="text-white text-sm opacity-50">{project.stack}</p>
+          <p className="text-white text-sm opacity-75">{project.stack}</p>
         </div>
       </div>
     );

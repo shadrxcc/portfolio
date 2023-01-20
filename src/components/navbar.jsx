@@ -26,7 +26,7 @@ class Navbar extends Component {
               id="navbar"
               className={`${
                 this.state.clicked ? "#navbar active" : "#navbar"
-              } bg-[rgba(23, 23, 23)] text-white flex flex-col mt-[15em] gap-[2em] md:mt-0 items-center md:bg-inherit bg-[rgba(23, 23, 23)] w-[100%] right-[0px] h-[100vh] fixed md:relative md:top-0 top-[-100em] md:flex-row`}
+              } bg-[#171717] text-white flex flex-col mt-[15em] gap-[2em] md:mt-0 items-center md:bg-inherit bg-[rgba(23, 23, 23)] w-[100%] right-[0px] h-[100vh] fixed md:relative md:top-0 top-[-100em] md:flex-row`}
             >
              <Link to='/projects'><li className="active">
                 Projects
