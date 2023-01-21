@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: rota;
-  src: url(/src/assets/fonts/Rota-Regular.otf);
+  font-family: "Satoshi-Variable";
+  src: url(/src/assets/fonts/Satoshi-Variable.ttf);
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
 }
 
 body {
@@ -13,7 +16,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   background: rgba(23, 23, 23);
-  font-family: rota;
+  font-family: Satoshi-Variable;
 }
 
 #navbar.active {

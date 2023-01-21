@@ -3,7 +3,7 @@ import React from "react";
 const Form = () => {
   return (
     <div>
-      <form action="" className="flex flex-col">
+      <form action="" className="flex text-lg flex-col">
         <label htmlFor="name" className="text-white my-1">
           Name
         </label>

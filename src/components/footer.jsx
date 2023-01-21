@@ -4,7 +4,7 @@ import { IoMail } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="pb-3">
       <div className="flex items-center justify-center text-white opacity-[75%] gap-x-[2em]">
         <a href="https://linkedin.com/shadrachakaade">
           <FaLinkedinIn />

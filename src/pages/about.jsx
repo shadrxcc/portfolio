@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       <div className="mx-[36px]">
-        <div className="text-white text-lg font-semibold">About</div>
+        <h2 className="text-white text-3xl font-[800] pb-3">About</h2>
         <Summary />
         <Skillstack />
         <Resume />
