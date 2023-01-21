@@ -3,7 +3,7 @@ import React from "react";
 const Form = () => {
   return (
     <div>
-      <form action="" className="flex text-lg flex-col">
+      <form action="" className="flex text-lg md:text-sm flex-col">
         <label htmlFor="name" className="text-white my-1">
           Name
         </label>
@@ -35,7 +35,7 @@ const Form = () => {
           placeholder="Enter a message"
         />
         <button className="border-2 rounded-[5px] p-2 my-2 text-white opacity-75 border-slate">
-          Say hello!
+          <p className="animate-pulse">Say hello!</p>
         </button>
       </form>
     </div>

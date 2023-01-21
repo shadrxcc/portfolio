@@ -17,20 +17,20 @@ const Skillstack = () => {
     return (
       <div
       
-        className="card rounded-[5px] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]"
+        className="card rounded-[5px] md:h-[9em] h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]"
         key={id}
       >
         <div>
-          <p className="text-white text-xl font-medium">{skill.title}</p>
+          <p className="text-white md:text-base text-xl font-medium">{skill.title}</p>
         </div>
         <div>
-          <p className="text-sm text-neutral-200 opacity-50">{skill.body}</p>
+          <p className="text-sm md:text-[11px] text-neutral-200 opacity-50">{skill.body}</p>
         </div>
       </div>
     );
   });
   return (
-    <div className="skillcards my-5 grid gap-3 md:grid-cols-2">{skills}</div>
+    <div className="skillcards my-5 grid gap-6 md:grid-cols-2">{skills}</div>
   );
 };
 
