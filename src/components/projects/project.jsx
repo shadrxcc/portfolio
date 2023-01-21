@@ -31,17 +31,17 @@ const Project = () => {
         </div>
       
         <div>
-          <p className="text-white text-lg opacity-75">{project.stack}</p>
+          <p className="text-white text-sm opacity-75">{project.stack}</p>
         </div>
       </div>
     );
   });
   return (
-    <div className="mx-[36px]">
+    <div className="mx-[24px]">
       <div>
-        <h2 className="text-white text-3xl font-[800] pb-3">Projects</h2>
+        <h2 className="text-white text-2xl font-[800] pb-3">Projects</h2>
       </div>
-      <div className="cards grid gap-3 md:grid-cols-3">{projectmap}</div>
+      <div className="cards grid gap-8 md:grid-cols-3">{projectmap}</div>
     </div>
   );
 };

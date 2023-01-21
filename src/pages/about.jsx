@@ -6,8 +6,8 @@ import Summary from "../components/about/summary";
 const About = () => {
   return (
     <>
-      <div className="mx-[36px]">
-        <h2 className="text-white text-3xl font-[800] pb-3">About</h2>
+      <div className="mx-[24px]">
+        <h2 className="text-white text-2xl font-[800] pb-3">About</h2>
         <Summary />
         <Skillstack />
         <Resume />

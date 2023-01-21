@@ -1,5 +1,4 @@
 import { React, Component } from "react";
-import logo from "../assets/logo.svg";
 import menu from "../assets/menu.svg";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
@@ -17,7 +16,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="">
-        <header className="transition-all py-0 px-[1.5rem] md:px-[3rem] flex justify-between items-center ease-in duration-300 w-full fixed h-20">
+        <header className="transition-all bg-[#171717] z-10 py-0 px-[1.5rem] md:px-[3rem] flex justify-between items-center ease-in duration-300 w-full fixed h-20">
           <div>
             <Link to='/'><h2 className="font-[800] text-white text-xl">shadrxcc.</h2></Link>
           </div>

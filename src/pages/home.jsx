@@ -1,9 +1,12 @@
 import React from "react";
+import About from "./about";
+import Contact from "./contact";
+import Projects from "./projects";
 
 const Home = () => {
   return (
     <>
-      <div className="mx-[36px]">
+      <div className="mx-[24px]">
         <h1 className="text-4xl medium text-white">Hello, i'm</h1>
         <h1 className="text-4xl medium text-white">Shadrach Akaade</h1>
         <p className="text-lg text-white opacity-[75%]  pb-3">
@@ -15,6 +18,9 @@ const Home = () => {
           different technologies for building web applications
         </p>
       </div>
+      <Projects/>
+      <About/>
+      <Contact/>
     </>
   );
 };
