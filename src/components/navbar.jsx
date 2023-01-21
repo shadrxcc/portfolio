@@ -2,6 +2,7 @@ import { React, Component } from "react";
 import menu from "../assets/menu.svg";
 import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
+import { Sling as Hamburger } from 'hamburger-react'
 
 class Navbar extends Component {
   state = {
@@ -42,11 +43,7 @@ class Navbar extends Component {
             className="mobile transition-all  ease-in duration-300 md:hidden"
             onClick={this.buttonClick}
           >
-            {this.state.clicked ? (
-              <GrClose className="text-[35px] text-white" />
-            ) : (
-              <img src={menu} alt="menu" />
-            )}
+            <Hamburger color="#fff"/>
           </div>
         </header>
       </div>

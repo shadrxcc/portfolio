@@ -20,7 +20,7 @@ body {
 }
 
 #navbar.active {
-  top: -10em;
+  top: -11em;
     padding: 2.5em 0 0;
   transition: 1.5s ease-in-out
 }
