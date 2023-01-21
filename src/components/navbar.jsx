@@ -1,6 +1,4 @@
 import { React, Component } from "react";
-import menu from "../assets/menu.svg";
-import { GrClose } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { Sling as Hamburger } from 'hamburger-react'
 

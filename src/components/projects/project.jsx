@@ -7,19 +7,18 @@ import { Link } from "react-router-dom";
 const Project = () => {
   const projectmap = projectarr.map((project, id) => {
     return (
-      <div className="card rounded-[5px] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
+      <div className="card rounded-[5px] justify-center md:h-[9em] h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
       
         <div className="flex items-center justify-between">
           <div>
             <p className="text-white text-xl font-medium">{project.title}</p>
-            
           </div>
           <div className="flex gap-x-2 items-center">
             <Link to={project.live}>
-              <FiLink2 className="text-white opacity-75" />
+              <FiLink2 className="text-white text-xl md:text-lg opacity-75" />
             </Link>
             <Link to={project.github}>
-              <AiFillGithub className="text-white opacity-75" />
+              <AiFillGithub className="text-white text-xl md:text-lg opacity-75" />
             </Link>
           </div>
         </div>
