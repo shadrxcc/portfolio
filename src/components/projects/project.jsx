@@ -7,19 +7,19 @@ import { Link } from "react-router-dom";
 const Project = () => {
   const projectmap = projectarr.map((project, id) => {
     return (
-      <div className="card rounded-[5px] justify-center md:h-[9em] h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
+      <div className="card shadow-sm hover:scale-[1.1] transition ease-in-out duration-300 rounded-[5px] justify-center md:h-[9em] h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
       
         <div className="flex items-center justify-between">
           <div>
             <p className="text-white md:text-base text-xl font-medium">{project.title}</p>
           </div>
           <div className="flex gap-x-2 items-center">
-            <Link to={project.live}>
+            <a href={project.live}>
               <FiLink2 className="text-white md:text-base text-xl md:text-lg opacity-75" />
-            </Link>
-            <Link to={project.github}>
+            </a>
+            <a href={project.github}>
               <AiFillGithub className="text-white md:text-base text-xl md:text-lg opacity-75" />
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -30,7 +30,7 @@ const Project = () => {
         </div>
       
         <div>
-          <p className="text-white  md:text-[11px] text-sm opacity-75">{project.stack}</p>
+          <p className="text-white  md:text-[11px] font-medium text-sm opacity-75">{project.stack}</p>
         </div>
       </div>
     );

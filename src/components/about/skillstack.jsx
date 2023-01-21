@@ -17,7 +17,7 @@ const Skillstack = () => {
     return (
       <div
       
-        className="card rounded-[5px] md:h-[9em] h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]"
+        className="card rounded-[5px] md:h-[9em]  shadow-sm hover:scale-[1.1] transition ease-in-out duration-300 h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]"
         key={id}
       >
         <div>
