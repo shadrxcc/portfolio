@@ -43,7 +43,7 @@ class Navbar extends Component {
             className="mobile transition-all  ease-in duration-300 md:hidden"
             onClick={this.buttonClick}
           >
-            <Hamburger color="#fff"/>
+            <Hamburger color="#fff" rounded/>
           </div>
         </header>
       </div>
