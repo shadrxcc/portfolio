@@ -12,7 +12,7 @@ const Form = () => {
           name="name"
           id="name"
           className="rounded-[5px] p-2 my-2 bg-[#1e1e1e]"
-          placeholder="Enter your name"
+        
         />
         <label htmlFor="email" className="text-white">
           Email
@@ -22,7 +22,7 @@ const Form = () => {
           name="email"
           id="email"
           className="rounded-[5px] p-2 my-2 bg-[#1e1e1e]"
-          placeholder="yourmail@mail.com"
+          
         />
         <label htmlFor="message" className="text-white">
           Message
@@ -32,7 +32,7 @@ const Form = () => {
           name="message"
           id="message"
           className="rounded-[5px] p-2 my-2 bg-[#1e1e1e]"
-          placeholder="Enter a message"
+        
         />
         <button className="border-2 rounded-[5px] p-2 my-2 text-white opacity-75 border-slate">
           <p className="animate-pulse">Say hello!</p>
