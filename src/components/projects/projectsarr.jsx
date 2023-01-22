@@ -9,8 +9,8 @@ export const projectarr = [
 
   {
     title: "covid-19-stats",
-    description: "Live covid statistics for the world",
-    stack: "REACTJS",
+    description: "Covid statistics for the world",
+    stack: "REACTJS + REDUX",
     live: "https://covid-19-stats-react.netlify.app",
     github: "https://github.com/shadrxcc/covid-19-stats",
   },

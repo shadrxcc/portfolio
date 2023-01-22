@@ -24,13 +24,13 @@ const Project = () => {
         </div>
 
         <div>
-          <p className="text-white md:text-[11px] text-sm text-neutral-200">
+          <p className="text-white md:text-[11px] text-sm opacity-75">
             {project.description}
           </p>
         </div>
       
         <div>
-          <p className="text-white  md:text-[11px] font-medium text-sm opacity-75">{project.stack}</p>
+          <p className="text-white  md:text-[11px] font-medium text-sm opacity-50">{project.stack}</p>
         </div>
       </div>
     );
