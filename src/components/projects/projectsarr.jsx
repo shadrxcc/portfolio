@@ -22,4 +22,58 @@ export const projectarr = [
     live: "https://covid-19-stats-react.netlify.app",
     github: "https://github.com/shadrxcc/paynote",
   },
+  ,
+
+  {
+    title: "paynote",
+    description: "Payment tracking app",
+    stack: "Ruby on Rails",
+    live: "https://covid-19-stats-react.netlify.app",
+    github: "https://github.com/shadrxcc/paynote",
+  },
+  ,
+
+  {
+    title: "paynote",
+    description: "Payment tracking app",
+    stack: "Ruby on Rails",
+    live: "https://covid-19-stats-react.netlify.app",
+    github: "https://github.com/shadrxcc/paynote",
+  },
+  ,
+
+  {
+    title: "paynote",
+    description: "Payment tracking app",
+    stack: "Ruby on Rails",
+    live: "https://covid-19-stats-react.netlify.app",
+    github: "https://github.com/shadrxcc/paynote",
+  },
+  ,
+
+  {
+    title: "paynote",
+    description: "Payment tracking app",
+    stack: "Ruby on Rails",
+    live: "https://covid-19-stats-react.netlify.app",
+    github: "https://github.com/shadrxcc/paynote",
+  },
+  ,
+
+  {
+    title: "paynote",
+    description: "Payment tracking app",
+    stack: "Ruby on Rails",
+    live: "https://covid-19-stats-react.netlify.app",
+    github: "https://github.com/shadrxcc/paynote",
+  },
+  ,
+
+  {
+    title: "paynote",
+    description: "Payment tracking app",
+    stack: "Ruby on Rails",
+    live: "https://covid-19-stats-react.netlify.app",
+    github: "https://github.com/shadrxcc/paynote",
+  },
 ];
