@@ -1,23 +1,14 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
-import About from "./pages/about";
-import Contact from "./pages/contact";
-import Home from "./pages/home";
-import Projects from "./pages/projects";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import Animatedroutes from "./Animatedroutes";
 
 const RouteSwitch = () => {
   return (
     <>
       <div className="flex flex-col gap-[5.5em] md:gap-[4em]">
         <Navbar />
-        <Routes>
-          <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/" element={<Home />}></Route>
-        </Routes>
+        <Animatedroutes/>
         <Footer />
       </div>
     </>

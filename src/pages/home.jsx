@@ -2,10 +2,12 @@ import React from "react";
 import About from "./about";
 import Contact from "./contact";
 import Projects from "./projects";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <>
+    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
       <div className="mx-[24px]">
         <h1 className="text-4xl medium text-white">Hello, i'm</h1>
         <h1 className="text-4xl medium text-white">Shadrach Akaade</h1>
@@ -21,7 +23,7 @@ const Home = () => {
       <Projects/>
       <About/>
       <Contact/>
-    </>
+    </motion.div></>
   );
 };
 
