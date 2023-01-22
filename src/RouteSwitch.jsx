@@ -10,7 +10,7 @@ import Footer from "./components/footer";
 const RouteSwitch = () => {
   return (
     <>
-      <div className="flex flex-col gap-[6em] md:gap-[6.48em]">
+      <div className="flex flex-col gap-[5.5em] md:gap-[4em]">
         <Navbar />
         <Routes>
           <Route path="/projects" element={<Projects />}></Route>
