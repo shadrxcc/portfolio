@@ -20,9 +20,6 @@ const Home = () => {
           different technologies for building web applications
         </p>
       </div>
-      <Projects/>
-      <About/>
-      <Contact/>
     </motion.div></>
   );
 };
