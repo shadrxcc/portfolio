@@ -10,18 +10,25 @@ import Animatedtitle from "../components/animatedtitle";
 const Home = () => {
   return (
     <>
-    <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
-      <div className="mx-[24px]">
-        <Animatedintro text={"Hello, i'm"}/>
-        <Animatedname text={"Shadrach Akaade"}/>
-        <Animatedtitle text={"Frontend Engineer"}/>
-        <p className="md:text-[.80rem] animate-pulse text-[.95rem] font-normal leading-[1.75] text-white opacity-[50%]">
-          I'm a software developer specialized in different technologies for
-          building web applications. I'm a software developer specialized in
-          different technologies for building web applications
-        </p>
-      </div>
-    </motion.div></>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="mt-[5rem]"
+      >
+        <div className="mx-[24px]">
+          <Animatedintro text={"Hello, i'm"} />
+          <Animatedname text={"Shadrach Akaade"} />
+          <Animatedtitle text={"Frontend Engineer"} />
+
+          <p className="md:text-[.80rem] animate-pulse text-[.95rem] font-normal leading-[1.75] text-white opacity-[50%]">
+            I'm a software developer specialized in different technologies for
+            building web applications. I'm a software developer specialized in
+            different technologies for building web applications
+          </p>
+        </div>
+      </motion.div>
+    </>
   );
 };
 

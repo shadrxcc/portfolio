@@ -46,7 +46,7 @@ const Animatedname = ({ text }) => {
           <motion.span
             key={id}
             variants={child}
-            className="pr-1 text-3xl font-bold text-white"
+            className="pr-1 text-3xl subpixel-antialiased font-bold text-white"
           >
             {word}
           </motion.span>

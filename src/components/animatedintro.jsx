@@ -38,7 +38,7 @@ const Animatedintro = ({text}) => {
 return (
 <motion.div className='overflow-hidden flex' variants={container} initial="hidden" animate="visible">{words.map((word, id) => {
     return (
-        <motion.span key={id} variants={child} className="pr-1 text-2xl font-bold text-white">{word}</motion.span>
+        <motion.span key={id} variants={child} className="pr-1 text-2xl font-bold text-neutral-300">{word}</motion.span>
     )
 })}</motion.div>
 )

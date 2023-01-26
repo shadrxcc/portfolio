@@ -43,22 +43,3 @@ body {
     translate: 0;
   }
 }
-
-.name {
-  color: transparent;
-  background-image: linear-gradient(#fff, #fff);
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-  background-position: -980px 0;
-  animation: color 5s linear infinite;
-}
-
-@keyframes color {
-  100% {
-    background-position: 0 0;
-  }
-
-  0% {
-    color: white;
-  }
-}
