@@ -3,18 +3,19 @@ import About from "./about";
 import Contact from "./contact";
 import Projects from "./projects";
 import { motion } from "framer-motion";
+import Animatedintro from "../components/animatedintro";
+import Animatedname from "../components/animatedname";
+import Animatedtitle from "../components/animatedtitle";
 
 const Home = () => {
   return (
     <>
     <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
       <div className="mx-[24px]">
-        <h1 className="text-4xl medium text-white">Hello, i'm</h1>
-        <h1 className="text-4xl medium text-white">Shadrach Akaade</h1>
-        <p className="text-lg text-white opacity-[75%]  pb-3">
-          Frontend Engineer
-        </p>
-        <p className="md:text-[.80rem]  text-[.95rem] font-normal leading-[1.75] text-white opacity-[50%]">
+        <Animatedintro text={"Hello, i'm"}/>
+        <Animatedname text={"Shadrach Akaade"}/>
+        <Animatedtitle text={"Frontend Engineer"}/>
+        <p className="md:text-[.80rem] animate-pulse text-[.95rem] font-normal leading-[1.75] text-white opacity-[50%]">
           I'm a software developer specialized in different technologies for
           building web applications. I'm a software developer specialized in
           different technologies for building web applications

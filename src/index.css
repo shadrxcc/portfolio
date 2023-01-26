@@ -14,14 +14,13 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  overflow-y: scroll;
   background: rgba(23, 23, 23);
   font-family: Satoshi-Variable;
 }
 
 #navbar.active {
   top: -11em;
-    padding: 2.5em 0 0;
+  padding: 2.5em 0 0;
   transition: 0.7s ease-in-out
 }
 
@@ -42,5 +41,24 @@ body {
   }
   100% {
     translate: 0;
+  }
+}
+
+.name {
+  color: transparent;
+  background-image: linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -980px 0;
+  animation: color 5s linear infinite;
+}
+
+@keyframes color {
+  100% {
+    background-position: 0 0;
+  }
+
+  0% {
+    color: white;
   }
 }

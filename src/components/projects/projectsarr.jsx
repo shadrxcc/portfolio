@@ -25,9 +25,9 @@ export const projectarr = [
   ,
 
   {
-    title: "paynote",
+    title: "moviestore-cms",
     description: "Payment tracking app",
-    stack: "Ruby on Rails",
+    stack: "REACTJS + REDUX",
     live: "https://covid-19-stats-react.netlify.app",
     github: "https://github.com/shadrxcc/paynote",
   },

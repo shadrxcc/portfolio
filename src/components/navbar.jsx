@@ -17,7 +17,7 @@ class Navbar extends Component {
       <div className="">
         <header className="transition-all bg-[#171717] z-10 py-0 px-[1.5rem] md:px-[3rem] flex justify-between items-center ease-in duration-300 w-full fixed h-20 md:h-10">
           <div>
-            <Link to='/'><h2 className="font-[800] text-white text-xl">shadrxcc.</h2></Link>
+            <Link to='/'><h2 className="font-[600] text-white text-xl">shadrxcc.</h2></Link>
           </div>
           <nav>
             <ul
