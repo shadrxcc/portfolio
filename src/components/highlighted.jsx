@@ -9,9 +9,7 @@ const sliceproject = projectarr.slice(0, 2);
 
 const highlights = sliceproject.map((proj, index) => {
   return (
-    <motion.div
-      
-    >
+    <motion.div>
       <div
         key={index}
         className="card shadow-sm hover-scale-0 md:hover:scale-[1.1] transition ease-in-out duration-300 rounded-[5px] justify-center md:h-[9em] h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]"
@@ -50,14 +48,21 @@ const highlights = sliceproject.map((proj, index) => {
 
 const HighlightedProjects = () => {
   return (
-    <div className="mx-[24px]" data-aos="zoom-in-up"
+    <div
+      className="mx-[24px]"
+      data-aos="zoom-in-up"
       data-aos-duration="1000"
-      data-aos-easing="ease-in-out">
+      data-aos-easing="ease-in-out"
+    >
       <div className="flex items-center justify-between">
         <h2 className="text-white md:text-lg text-2xl font-[800] pb-3">
-        Projects
+          Projects
         </h2>
-          <a href="/projects"><p className="text-[12px] resume opacity-75 text-white">See more projects</p></a>
+        <a href="/projects">
+          <p className="text-[12px] resume opacity-75 text-white">
+            See more projects
+          </p>
+        </a>
       </div>
       <div className="cards grid gap-8 md:grid-cols-2">{highlights}</div>
     </div>

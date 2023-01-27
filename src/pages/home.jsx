@@ -4,6 +4,7 @@ import Animatedintro from "../components/animatedintro";
 import Animatedname from "../components/animatedname";
 import Animatedtitle from "../components/animatedtitle";
 import HighlightedProjects from "../components/highlighted";
+import Animatedsummary from "../components/animatedsummary";
 
 const Home = () => {
   return (
@@ -18,14 +19,11 @@ const Home = () => {
           <Animatedintro text={"Hello, i'm"} />
           <Animatedname text={"Shadrach Akaade"} />
           <Animatedtitle text={"Frontend Engineer"} />
-
-          <p className="md:text-[.80rem] animate-pulse text-[.95rem] font-normal leading-[1.75] text-white opacity-[50%]">
-            I'm a software developer specialized in different technologies for
+          <Animatedsummary text={`I'm a software developer specialized in different technologies for
             building web applications. I'm a software developer specialized in
-            different technologies for building web applications
-          </p>
+            different technologies for building web applications`} />
         </div>
-        <HighlightedProjects/>
+        <HighlightedProjects />
       </motion.div>
     </>
   );
