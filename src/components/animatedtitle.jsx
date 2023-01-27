@@ -1,5 +1,5 @@
-import Animatedintro from './animatedintro'
-import { motion, spring, transform } from 'framer-motion'
+
+import { motion, spring } from 'framer-motion'
 
 export const scaleChar = () => {
       return {
@@ -53,7 +53,7 @@ const Animatedtitle = ({text}) => {
 return (
 <motion.div className='overflow-hidden flex' variants={container} initial="hidden" animate="visible">{char.map((letter, id) => {
     return (
-        <motion.p key={id} variants={child} whileHover={() => scaleChar()}  className="text-lg text-neutral-200 pb-3">{letter === " " ? "\u00A0" : letter}</motion.p>
+        <motion.p key={id} variants={child} whileHover={() => scaleChar()} className="text-lg text-neutral-200 pb-3">{letter === " " ? "\u00A0" : letter}</motion.p>
     )
 })}</motion.div>
 )

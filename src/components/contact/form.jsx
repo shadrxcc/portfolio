@@ -34,8 +34,8 @@ const Form = () => {
           className="rounded-[5px] p-2 my-2 bg-[#1e1e1e]"
         
         />
-        <button className="border-2 rounded-[5px] p-2 my-2 text-white opacity-75 border-slate">
-          <p className="animate-pulse">Say hello!</p>
+        <button className="border-2 animate-pulse rounded-[5px] p-2 my-2 text-white opacity-75 border-slate">
+          <p className="">Say hello!</p>
         </button>
       </form>
     </div>

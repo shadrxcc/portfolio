@@ -1,11 +1,9 @@
 import React from "react";
-import About from "./about";
-import Contact from "./contact";
-import Projects from "./projects";
 import { motion } from "framer-motion";
 import Animatedintro from "../components/animatedintro";
 import Animatedname from "../components/animatedname";
 import Animatedtitle from "../components/animatedtitle";
+import HighlightedProjects from "../components/highlighted";
 
 const Home = () => {
   return (
@@ -14,7 +12,7 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="mt-[5rem]"
+        className="mt-[5rem] md:mt-[1rem] flex flex-col gap-y-7"
       >
         <div className="mx-[24px]">
           <Animatedintro text={"Hello, i'm"} />
@@ -27,6 +25,7 @@ const Home = () => {
             different technologies for building web applications
           </p>
         </div>
+        <HighlightedProjects/>
       </motion.div>
     </>
   );

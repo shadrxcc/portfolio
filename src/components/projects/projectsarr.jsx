@@ -22,7 +22,6 @@ export const projectarr = [
     live: "https://github.com/shadrxcc/paynote",
     github: "https://github.com/shadrxcc/paynote",
   },
-  ,
 
   {
     title: "bookstore-cms",
@@ -31,7 +30,6 @@ export const projectarr = [
     live: "https://yinktech.github.io/Bookstore-app/",
     github: "https://github.com/shadrxcc/Bookstore-app",
   },
-  ,
 
   {
     title: "gamedeck",
@@ -40,7 +38,6 @@ export const projectarr = [
     live: "https://631a68d7231fa91c68c0f086--marvelous-arithmetic-da7874.netlify.app/",
     github: "https://github.com/shadrxcc/gamedeck",
   },
-  ,
 
   {
     title: "private-events",
