@@ -19,9 +19,11 @@ const Home = () => {
           <Animatedintro text={"Hello, i'm"} />
           <Animatedname text={"Shadrach Akaade"} />
           <Animatedtitle text={"Frontend Engineer"} />
-          <Animatedsummary text={`I'm a software developer specialized in different technologies for
+          <Animatedsummary
+            text={`I'm a software developer specialized in different technologies for
             building web applications. I'm a software developer specialized in
-            different technologies for building web applications`} />
+            different technologies for building web applications`}
+          />
         </div>
         <HighlightedProjects />
       </motion.div>

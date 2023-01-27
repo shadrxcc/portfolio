@@ -45,5 +45,5 @@ export const projectarr = [
     stack: "RUBY ON RAILS",
     live: "https://first-private-event.herokuapp.com/",
     github: "https://github.com/shadrxcc/private-events",
-  }
+  },
 ];
