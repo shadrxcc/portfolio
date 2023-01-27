@@ -42,7 +42,7 @@ const Animatedsummary = ({ text }) => {
     >
       <motion.p
         variants={child}
-        className="md:text-[.80rem] text-[.95rem] font-normal leading-[1.75] text-neutral-300 opacity-[50%]"
+        className="text-sm font-normal leading-[1.75] text-neutral-300 opacity-[50%]"
       >
         {text}
       </motion.p>
