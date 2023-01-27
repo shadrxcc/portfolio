@@ -48,7 +48,6 @@ const HighlightedProjects = () => {
       className="mx-[24px]"
       data-aos="zoom-in-up"
       data-aos-duration="1000"
-      data-aos-delay="2000"
       data-aos-easing="ease-in-out"
     >
       <div className="flex items-center justify-between">
@@ -56,7 +55,7 @@ const HighlightedProjects = () => {
           Projects
         </h2>
         <a href="/projects">
-          <p className="md:text-[12px] resume opacity-75 text-white">
+          <p className="text-[12px] resume opacity-75 text-white">
             See more projects
           </p>
         </a>
