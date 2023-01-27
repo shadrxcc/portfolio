@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, spring } from "framer-motion";
-import { PropTypes } from "proptype";
+import { PropTypes } from "prop-types";
 
 const Animatedname = ({ text }) => {
   const words = text.split(" ");

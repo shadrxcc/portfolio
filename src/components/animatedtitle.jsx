@@ -1,5 +1,5 @@
 import { motion, spring } from "framer-motion";
-import { PropTypes } from "proptype";
+import { PropTypes } from "prop-types";
 
 export const scaleChar = () => {
   return {
@@ -62,7 +62,7 @@ const Animatedtitle = ({ text }) => {
             key={id}
             variants={child}
             whileHover={() => scaleChar()}
-            className="text-lg text-neutral-200 pb-3"
+            className="text-lg md:text-sm text-neutral-200 pb-3"
           >
             {letter === " " ? "\u00A0" : letter}
           </motion.p>

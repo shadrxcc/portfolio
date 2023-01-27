@@ -1,6 +1,6 @@
 import React from "react";
 import { motion, spring } from "framer-motion";
-import { PropTypes } from "proptype";
+import { PropTypes } from "prop-types";
 
 export const container = {
     hidden: { opacity: 0 },
