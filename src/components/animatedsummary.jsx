@@ -1,8 +1,8 @@
 import React from "react";
 import { motion, spring } from "framer-motion";
+import { PropTypes } from "proptype";
 
-const Animatedsummary = ({ text }) => {
-  const container = {
+export const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
@@ -10,10 +10,10 @@ const Animatedsummary = ({ text }) => {
     }),
   };
 
-  const child = {
+export const child = {
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
         type: "string",
         damping: 12,
@@ -23,7 +23,7 @@ const Animatedsummary = ({ text }) => {
 
     hidden: {
       opacity: 0,
-      x: 30,
+      y: 20,
       transition: {
         type: spring,
         damping: 12,
@@ -32,6 +32,7 @@ const Animatedsummary = ({ text }) => {
     },
   };
 
+const Animatedsummary = ({ text }) => {
   return (
     <motion.div
       className="overflow-hidden flex"
@@ -41,7 +42,7 @@ const Animatedsummary = ({ text }) => {
     >
       <motion.p
         variants={child}
-        className="md:text-[.80rem] animate-pulse text-[.95rem] font-normal leading-[1.75] text-white opacity-[50%]"
+        className="md:text-[.80rem] text-[.95rem] font-normal leading-[1.75] text-neutral-300 opacity-[50%]"
       >
         {text}
       </motion.p>
@@ -50,3 +51,7 @@ const Animatedsummary = ({ text }) => {
 };
 
 export default Animatedsummary;
+
+Animatedsummary.propTypes = {
+  text: PropTypes.string,
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, spring } from "framer-motion";
+import { PropTypes } from "proptype";
 
 const Animatedintro = ({ text }) => {
   const words = text.split(" ");
@@ -46,7 +47,7 @@ const Animatedintro = ({ text }) => {
           <motion.span
             key={id}
             variants={child}
-            className="pr-1 text-2xl font-bold text-neutral-300"
+            className="pr-1 text-2xl font-bold text-white"
           >
             {word}
           </motion.span>
@@ -57,3 +58,7 @@ const Animatedintro = ({ text }) => {
 };
 
 export default Animatedintro;
+
+Animatedintro.propTypes = {
+  text: PropTypes.string,
+}

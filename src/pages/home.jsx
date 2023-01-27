@@ -13,17 +13,19 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="mt-[5rem] md:mt-[1rem] flex flex-col gap-y-7"
+        className="mt-[5rem] md:mt-[1rem] flex flex-col gap-y-10"
       >
-        <div className="mx-[24px]">
+        <div className="mx-[24px] md:flex md:gap-x-[8em] items-center">
+          <div>
           <Animatedintro text={"Hello, i'm"} />
           <Animatedname text={"Shadrach Akaade"} />
-          <Animatedtitle text={"Frontend Engineer"} />
+          <Animatedtitle text={"Frontend Engineer"} /></div>
+          <div>
           <Animatedsummary
             text={`I'm a software developer specialized in different technologies for
             building web applications. I'm a software developer specialized in
             different technologies for building web applications`}
-          />
+          /></div>
         </div>
         <HighlightedProjects />
       </motion.div>

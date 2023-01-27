@@ -1,4 +1,5 @@
 import { motion, spring } from "framer-motion";
+import { PropTypes } from "proptype";
 
 export const scaleChar = () => {
   return {
@@ -72,3 +73,7 @@ const Animatedtitle = ({ text }) => {
 };
 
 export default Animatedtitle;
+
+Animatedtitle.propTypes = {
+  text: PropTypes.string,
+}

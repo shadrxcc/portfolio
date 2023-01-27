@@ -1,5 +1,6 @@
 import React from "react";
 import { motion, spring } from "framer-motion";
+import { PropTypes } from "proptype";
 
 const Animatedname = ({ text }) => {
   const words = text.split(" ");
@@ -57,3 +58,7 @@ const Animatedname = ({ text }) => {
 };
 
 export default Animatedname;
+
+Animatedname.propTypes = {
+  text: PropTypes.string
+}
