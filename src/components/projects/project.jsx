@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Project = () => {
   const projectmap = projectarr.map((project, id) => {
     return (
-      <motion.div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" >
+      <motion.div  key={id} data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" >
       <div className="card shadow-sm hover-scale-0 md:hover:scale-[1.1] transition ease-in-out duration-300 rounded-[5px] justify-center md:h-[9em] h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
       
         <div className="flex items-center justify-between">

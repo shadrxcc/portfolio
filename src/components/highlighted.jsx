@@ -3,15 +3,14 @@ import { projectarr } from "./projects/projectsarr";
 import { FiLink2 } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const sliceproject = projectarr.slice(0, 2);
 
 const highlights = sliceproject.map((proj, index) => {
   return (
-    <motion.div>
+    <motion.div key={index}>
       <div
-        key={index}
+        
         className="card shadow-sm hover-scale-0 md:hover:scale-[1.1] transition ease-in-out duration-300 rounded-[5px] justify-center md:h-[9em] h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]"
       >
         <div className="flex items-center justify-between">
