@@ -46,9 +46,7 @@ const HighlightedProjects = () => {
   return (
     <div
       className="mx-[24px]"
-      data-aos="zoom-in-up"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
+      
     >
       <div className="flex items-center justify-between">
         <h2 className="text-white text-2xl font-[800] pb-3">

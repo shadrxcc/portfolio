@@ -14,8 +14,12 @@ const Home = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         className="mt-[5rem] flex flex-col gap-y-7"
+        data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-once="true"
       >
-        <div className="mx-[24px] md:w-[75%]">
+        <div className="mx-[24px] md:w-[70%]">
           <div className="">
           <Animatedintro text={"Hello, i'm"} />
           <Animatedname text={"Shadrach Akaade"} />
