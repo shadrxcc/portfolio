@@ -10,14 +10,11 @@ const Home = () => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ y: "100%", opacity: 0 }}
+        animate={{ y: "0%", opacity: 1 }}
         exit={{ opacity: 0 }}
+        transition={{ duration: 0.75 , ease: "easeInOut"}}
         className="mt-[5rem] flex flex-col gap-y-7"
-        data-aos="zoom-in-up"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      data-aos-once="true"
       >
         <div className="mx-[24px] md:w-[70%]">
           <div className="">

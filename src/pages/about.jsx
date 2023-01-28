@@ -9,9 +9,10 @@ const About = () => {
     <>
       <motion.div
         className="mx-[24px]"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ y: "100%", opacity: 0 }}
+        animate={{ y: "0%", opacity: 1 }}
         exit={{ opacity: 0 }}
+        transition={{ duration: 0.75 , ease: "easeInOut"}}
       >
         <h2 className="text-white text-2xl font-[800] pb-3">
           About
