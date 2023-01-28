@@ -13,10 +13,10 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="mt-[5rem] md:mt-[1rem] flex flex-col gap-y-10"
+        className="mt-[5rem] flex flex-col gap-y-7"
       >
-        <div className="mx-[24px] md:flex md:gap-x-[8em] items-center">
-          <div>
+        <div className="mx-[24px] md:w-[75%]">
+          <div className="">
           <Animatedintro text={"Hello, i'm"} />
           <Animatedname text={"Shadrach Akaade"} />
           <Animatedtitle text={"Frontend Engineer"} /></div>

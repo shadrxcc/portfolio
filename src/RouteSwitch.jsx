@@ -6,7 +6,7 @@ import Animatedroutes from "./Animatedroutes";
 const RouteSwitch = () => {
   return (
     <>
-      <div className="flex flex-col gap-[5.5em] md:gap-[4em]">
+      <div className="flex flex-col gap-[5.5em]">
         <Navbar />
         <Animatedroutes/>
         <Footer />

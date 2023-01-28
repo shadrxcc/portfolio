@@ -16,14 +16,14 @@ const Skillstack = () => {
   const skills = skillstack.map((skill, id) => {
     return (
       <div key={id}>
-        <div className="card rounded-[5px] md:h-[9em]  shadow-sm hover-scale-0 md:hover:scale-[1.1] transition ease-in-out duration-300 h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
+        <div className="card rounded-[5px] shadow-sm hover-scale-0 md:hover:scale-[1.1] transition ease-in-out duration-300 h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
           <div>
-            <p className="text-white md:text-base text-xl font-medium">
+            <p className="text-white text-xl font-medium">
               {skill.title}
             </p>
           </div>
           <div>
-            <p className="text-sm md:text-[11px] text-neutral-200 opacity-50">
+            <p className="text-sm text-neutral-200 opacity-50">
               {skill.body}
             </p>
           </div>

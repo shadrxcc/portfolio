@@ -27,7 +27,7 @@ const Form = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex md:text-[.80rem]  text-[.95rem] font-normal leading-[1.75] flex-col"
+        className="flex text-[.95rem] font-normal leading-[1.75] flex-col"
       >
         <label htmlFor="name" className="text-white my-1">
           Name

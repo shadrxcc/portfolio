@@ -11,10 +11,10 @@ const Contact = () => {
         exit={{ opacity: 0 }}
       >
         <div className="mx-[24px] md:mx-[150px]">
-          <h2 className="text-white md:text-lg text-2xl font-[800] pb-3">
+          <h2 className="text-white text-2xl font-[800] pb-3">
             Contact
           </h2>
-          <p className="text-white md:text-[.80rem] text-[.95rem] font-normal leading-[1.75] opacity-75 pb-4">
+          <p className="text-white text-[.95rem] font-normal leading-[1.75] opacity-75 pb-4">
             Want to work with me or say hello?
           </p>
           <Form />
