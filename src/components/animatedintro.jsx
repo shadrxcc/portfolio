@@ -47,7 +47,7 @@ const Animatedintro = ({ text }) => {
           <motion.h1
             key={id}
             variants={child}
-            className="pr-1 text-4xl font-bold text-white"
+            className="pr-1 text-[1.7rem] md:text-4xl font-bold text-white"
           >
             {word}
           </motion.h1>
