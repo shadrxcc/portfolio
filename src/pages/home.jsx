@@ -23,9 +23,7 @@ const Home = () => {
           <Animatedtitle text={"Frontend Engineer"} /></div>
           <div>
           <Animatedsummary
-            text={`I'm a software developer specialized in different technologies for
-            building web applications. I'm a software developer specialized in
-            different technologies for building web applications`}
+            text={`I love creating aesthetically pleasing, accessible and functional user-friendly web experiences.`}
           /></div>
         </div>
         <HighlightedProjects />
