@@ -15,7 +15,7 @@ export const scaleChar = () => {
 };
 
 const Animatedtitle = ({ text }) => {
-  const char = Array.from(text);
+  const char = text.split(' ')
 
   const container = {
     hidden: { opacity: 0 },
@@ -29,18 +29,17 @@ const Animatedtitle = ({ text }) => {
     visible: {
       opacity: 1,
       x: 0,
-      y: 0,
       transition: {
         type: "string",
         damping: 12,
         stiffness: 100,
+        duration: 0.75
       },
     },
 
     hidden: {
       opacity: 0,
       x: -20,
-      y: 10,
       transition: {
         type: spring,
         damping: 12,
@@ -62,9 +61,9 @@ const Animatedtitle = ({ text }) => {
             key={id}
             variants={child}
             whileHover={() => scaleChar()}
-            className="text-lg md:text-xl text-neutral-200 pb-3"
+            className="text-lg md:text-xl pr-1 text-neutral-200 pb-3"
           >
-            {letter === " " ? "\u00A0" : letter}
+            {letter}
           </motion.p>
         );
       })}
