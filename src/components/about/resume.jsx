@@ -7,7 +7,7 @@ const Resume = () => {
     <>
       <div>
         <a className=" flex gap-x-2 items-center" href={resume} download>
-          <p className="resume md:text-sm text-lg text-white opacity-75 hover:opacity-100">
+          <p className="resume md:text-base text-lg text-white opacity-75 hover:opacity-100">
             Get my resume{" "}
           </p>
           <BsArrowRight className="resume text-white" />
