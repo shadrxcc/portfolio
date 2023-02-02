@@ -3,7 +3,7 @@ import React from "react";
 const skillstack = [
   {
     title: "Soft Skills",
-    body: "TEAM PLAYER + ADAPTABILITY + COMMUNICATION + PATIENCE + PROBLEM-SOLVING + RELIABLE",
+    body: "TEAM PLAYER + ADAPTABLE + COMMUNICATION + PATIENT + RELIABLE + PROBLEM-SOLVING",
   },
 
   {

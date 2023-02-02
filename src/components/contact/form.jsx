@@ -1,17 +1,17 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
-import Box from '@mui/material/Box';
-import Alert from '@mui/material/Alert';
-import IconButton from '@mui/material/IconButton';
-import Collapse from '@mui/material/Collapse';
+import Box from "@mui/material/Box";
+import Alert from "@mui/material/Alert";
+import Collapse from "@mui/material/Collapse";
 
 const Form = () => {
   const form = useRef();
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [open, setOpen] = useState(false);
+  const [clicked, setClicked] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -31,22 +31,19 @@ const Form = () => {
         }
       );
 
-      setName('')
-      setEmail('')
-      setMessage('')
-      setOpen(true)
+    setName("");
+    setEmail("");
+    setMessage("");
+    setOpen(true);
+    setClicked(!clicked);
   };
   return (
     <div>
-      <Box sx={{ width: '100%' }}>
-      <Collapse in={open}>
-        <Alert
-          sx={{ mb: 2 }}
-        >
-          Message sent!
-        </Alert>
-      </Collapse>
-    </Box>
+      <Box sx={{ width: "100%" }}>
+        <Collapse in={open}>
+          <Alert sx={{ mb: 2 }}>Message sent!</Alert>
+        </Collapse>
+      </Box>
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -58,10 +55,11 @@ const Form = () => {
         <input
           type="text"
           name="from_name"
-          onChange={e => setName(e.target.value)}
+          onChange={(e) => setName(e.target.value)}
           value={name}
           id="name"
-          className="rounded-[5px] p-2 my-2 bg-[#1e1e1e] text-white opacity-75" required
+          className="rounded-[5px] p-2 my-2 bg-[#1e1e1e] text-white opacity-75"
+          required
         />
         <label htmlFor="email" className="text-white">
           Email
@@ -71,8 +69,9 @@ const Form = () => {
           name="from_email"
           id="email"
           value={email}
-          onChange={e => setEmail(e.target.value)}
-          className="rounded-[5px] p-2 my-2 bg-[#1e1e1e] text-white opacity-75" required
+          onChange={(e) => setEmail(e.target.value)}
+          className="rounded-[5px] p-2 my-2 bg-[#1e1e1e] text-white opacity-75"
+          required
         />
         <label htmlFor="message" className="text-white">
           Message
@@ -82,11 +81,15 @@ const Form = () => {
           name="message"
           id="message"
           value={message}
-          onChange={e => setMessage(e.target.value)}
-          className="rounded-[5px] p-2 my-2 bg-[#1e1e1e] text-white opacity-75" required
+          onChange={(e) => setMessage(e.target.value)}
+          className="rounded-[5px] p-2 my-2 bg-[#1e1e1e] text-white opacity-75"
+          required
         />
         <input
-          className="border-2 animate-pulse rounded-[5px] p-2 my-2 text-white opacity-75 border-slate"
+          id="btn"
+          className={`${
+            clicked ? "#btn clicked" : "btn"
+          }transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 border-2 animate-pulse rounded-[5px] p-2 my-2 text-white opacity-75 border-slate`}
           type="submit"
           value="Say hello!"
         />

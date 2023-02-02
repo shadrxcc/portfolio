@@ -15,7 +15,7 @@ const Contact = () => {
           <h2 className="text-white text-2xl font-[800] pb-3">
             Contact
           </h2>
-          <p className="text-white md:text-lg text-base font-normal leading-[1.75] opacity-75 pb-4">
+          <p className="text-neutral-400 md:text-lg text-base font-normal leading-[1.75] opacity-75 pb-4">
             Want to work with me or say hello?
           </p>
           <Form />

@@ -15,7 +15,7 @@ const Footer = () => {
         <a href="https://twitter.com/coldsh0t">
           <FaTwitter />
         </a>
-        <a href="akaadesm@gmail.com">
+        <a href="mailto:akaadesm@gmail.com">
           <IoMail />
         </a>
       </div>
