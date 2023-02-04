@@ -24,7 +24,7 @@ const Home = () => {
           </div>
           <div>
             <Animatedsummary
-              text={`I create aesthetically pleasing, accessible and functional user-friendly web experiences.`}
+              text={`I create aesthetically pleasing, accessible, and functional user-friendly web experiences.`}
             />
           </div>
         </div>

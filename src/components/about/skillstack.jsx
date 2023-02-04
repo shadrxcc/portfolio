@@ -8,7 +8,7 @@ const skillstack = [
 
   {
     title: "Technical Skills",
-    body: "HTML + CSS + TAILWIND + BOOTSTRAP + JAVASCRIPT + REACTJS + REDUX + JEST + GSAP + GIT + GITHUB + TDD + FIGMA",
+    body: "HTML + CSS + TAILWIND + BOOTSTRAP + JAVASCRIPT + REACTJS + REDUX + JEST + GSAP + RUBY + GIT + GITHUB + TDD + FIGMA",
   },
 ];
 
