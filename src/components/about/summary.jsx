@@ -4,7 +4,7 @@ const Summary = () => {
   return (
     <div>
       <p className="summary text-neutral-400 text-base md:text-lg font-normal leading-[1.75] opacity-75">
-        Having had a bit of experience in design, I&apos;m fascinated and have a
+        Having had a bit of experience in design, I have a
         keen eye for clean designs which gives me a unique perspective toward
         frontend development. I coupled my enthusiasm for good designs with
         technical skills to create seamless user experiences using front-end
