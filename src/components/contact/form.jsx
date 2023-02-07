@@ -89,7 +89,7 @@ const Form = () => {
           id="btn"
           className={`${
             clicked ? "#btn clicked" : "btn"
-          }transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 border-2 animate-pulse rounded-[5px] p-2 my-2 text-white opacity-75 border-white `}
+          }transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 border-2 animate-pulse rounded-[5px] p-2 my-2 text-white opacity-75 border-slate `}
           type="submit"
           value="Say hello!"
         />
