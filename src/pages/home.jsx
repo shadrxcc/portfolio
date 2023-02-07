@@ -14,7 +14,7 @@ const Home = () => {
         animate={{ y: "0%", opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.75, ease: "easeInOut" }}
-        className="mt-[5rem] flex flex-col gap-y-9"
+        className="mt-[5rem] flex flex-col gap-y-11"
       >
         <div className="mx-[24px] md:w-[70%]">
           <div className="">
