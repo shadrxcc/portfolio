@@ -31,17 +31,17 @@ class Navbar extends Component {
               } bg-[#171717] text-white text-lg flex flex-col mt-[15em] gap-[2em] md:mt-0 items-center md:bg-inherit bg-[rgba(23, 23, 23)] w-[100%] right-[0px] h-[100vh] fixed md:relative md:top-0 top-[-100em] md:flex-row`}
             >
               <Link to="/projects">
-                <motion.li className="active hover:text-[#4D9375]" whileHover={() => scaleChar()}>
+                <motion.li className="active text-white" whileHover={() => scaleChar()}>
                   Projects
                 </motion.li>
               </Link>
               <Link to="/about">
-                <motion.li className="active hover:text-[#4D9375]" whileHover={() => scaleChar()}>
+                <motion.li className="active text-white" whileHover={() => scaleChar()}>
                   About
                 </motion.li>
               </Link>
               <Link to="/contact">
-                <motion.li className="active hover:text-[#4D9375]" whileHover={() => scaleChar()}>
+                <motion.li className="active text-white" whileHover={() => scaleChar()}>
                   Contact
                 </motion.li>
               </Link>

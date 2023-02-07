@@ -16,7 +16,7 @@ const Project = () => {
         <div className="card shadow-sm hover-scale-0 md:hover:scale-[1.1] transition ease-in-out duration-300 rounded-[5px] justify-center h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-[#4D9375] text-xl font-medium">
+              <p className="text-white text-xl font-medium">
                 {project.title}
               </p>
             </div>
