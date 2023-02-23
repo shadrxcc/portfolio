@@ -8,11 +8,11 @@ export const projectarr = [
   },
 
   {
-    title: "covid-19-stats",
-    description: "Covid statistics for the world",
-    stack: "REACTJS + REDUX",
-    live: "https://covid-19-stats-react.netlify.app",
-    github: "https://github.com/shadrxcc/covid-19-stats",
+    title: "hd_cars_rent",
+    description: "CRUD car booking app",
+    stack: "REACTJS + REDUX + RUBY ON RAILS",
+    live: "https://hd-cars-rent-git-dev-shadrxcc.vercel.app/",
+    github: "https://github.com/shadrxcc/hd_cars_rent",
   },
 
   {
