@@ -40,10 +40,10 @@ export const projectarr = [
   },
 
   {
-    title: "private-events",
-    description: "Event registration app",
-    stack: "RUBY ON RAILS",
+    title: "marvel-lp",
+    description: "Marvel landing page",
+    stack: "REACTJS",
     live: "https://first-private-event.herokuapp.com/",
-    github: "https://github.com/shadrxcc/private-events",
+    github: "https://marvel-lp.vercel.app/",
   },
 ];
