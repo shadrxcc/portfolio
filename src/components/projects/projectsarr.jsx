@@ -16,6 +16,14 @@ export const projectarr = [
   },
 
   {
+    title: "marvel-lp",
+    description: "Marvel inspired landing page",
+    stack: "REACTJS",
+    live: "https://marvel-lp.vercel.app/",
+    github: "https://github.com/shadrxcc/marvel-lp/",
+  },
+
+  {
     title: "paynote",
     description: "Payment tracking app",
     stack: "RUBY ON RAILS",
@@ -37,13 +45,5 @@ export const projectarr = [
     stack: "JAVASCRIPT",
     live: "https://631a68d7231fa91c68c0f086--marvelous-arithmetic-da7874.netlify.app/",
     github: "https://github.com/shadrxcc/gamedeck",
-  },
-
-  {
-    title: "marvel-lp",
-    description: "Marvel landing page",
-    stack: "REACTJS",
-    live: "https://first-private-event.herokuapp.com/",
-    github: "https://marvel-lp.vercel.app/",
   },
 ];
