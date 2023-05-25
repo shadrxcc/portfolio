@@ -46,9 +46,9 @@ const Project = () => {
     );
   });
   return (
-    <div className="mx-[24px]">
+    <div className="mx-[24px] mt-10">
       <div>
-        <h2 className="text-white text-2xl font-[800] pb-3">
+        <h2 className="text-white text-lg md:text-2xl font-semibold pb-3">
           Projects
         </h2>
       </div>

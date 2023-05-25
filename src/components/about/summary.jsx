@@ -2,7 +2,7 @@ import React from "react";
 
 const Summary = () => {
   return (
-    <div>
+    <div className="flex flex-col mb-10 gap-y-4">
       <p className="summary text-neutral-400 text-base md:text-lg font-normal leading-[1.75] opacity-75">
         Having had a bit of experience in design, I have a
         keen eye for clean designs which gives me a unique perspective toward

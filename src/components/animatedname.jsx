@@ -3,7 +3,6 @@ import { motion, spring } from "framer-motion";
 import { PropTypes } from "prop-types";
 
 const Animatedname = ({ text }) => {
-  const words = text.split(" ");
 
   const container = {
     hidden: { opacity: 0 },
@@ -37,22 +36,21 @@ const Animatedname = ({ text }) => {
 
   return (
     <motion.div
-      className="overflow-hidden flex"
+      className="overflow-hidden justify-center flex"
       variants={container}
       initial="hidden"
       animate="visible"
     >
-      {words.map((word, id) => {
-        return (
+
+
           <motion.span
-            key={id}
+
             variants={child}
-            className="pr-1 text-3xl md:text-4xl subpixel-antialiased font-bold text-white"
+            className="pr-1 text-2xl md:text-4xl subpixel-antialiased font-medium text-white"
           >
-            {word}
+            {text}
           </motion.span>
-        );
-      })}
+
     </motion.div>
   );
 };

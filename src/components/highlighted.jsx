@@ -49,7 +49,7 @@ const HighlightedProjects = () => {
       
     >
       <div className="flex items-center justify-between">
-        <h2 className="text-white text-2xl font-[800] pb-3">
+        <h2 className="text-white text-lg md:text-2xl font-[800] pb-3">
           Projects
         </h2>
         <a href="/projects">

@@ -35,14 +35,14 @@ export const child = {
 const Animatedsummary = ({ text }) => {
   return (
     <motion.div
-      className="overflow-hidden flex"
+      className="overflow-hidden flex justify-center"
       variants={container}
       initial="hidden"
       animate="visible"
     >
       <motion.p
         variants={child}
-        className="md:text-lg text-base font-normal leading-[1.75] text-neutral-400 opacity-[50%]"
+        className="md:text-lg text-base text-center font-normal leading-[1.75] text-neutral-400 opacity-[50%]"
       >
         {text}
       </motion.p>

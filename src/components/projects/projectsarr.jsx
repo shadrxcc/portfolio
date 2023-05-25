@@ -18,7 +18,7 @@ export const projectarr = [
   {
     title: "marvel-lp",
     description: "Marvel inspired landing page",
-    stack: "REACTJS",
+    stack: "REACTJS + MARVEL API",
     live: "https://marvel-lp.vercel.app/",
     github: "https://github.com/shadrxcc/marvel-lp/",
   },

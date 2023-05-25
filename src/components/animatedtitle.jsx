@@ -15,8 +15,6 @@ export const scaleChar = () => {
 };
 
 const Animatedtitle = ({ text }) => {
-  const char = text.split(' ')
-
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
@@ -28,18 +26,18 @@ const Animatedtitle = ({ text }) => {
   const child = {
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
         type: "string",
         damping: 12,
         stiffness: 100,
-        duration: 0.75
+        duration: 0.75,
       },
     },
 
     hidden: {
       opacity: 0,
-      x: -20,
+      y: 20,
       transition: {
         type: spring,
         damping: 12,
@@ -50,23 +48,18 @@ const Animatedtitle = ({ text }) => {
 
   return (
     <motion.div
-      className="overflow-hidden flex"
+      className="overflow-hidden justify-center flex"
       variants={container}
       initial="hidden"
       animate="visible"
     >
-      {char.map((letter, id) => {
-        return (
-          <motion.p
-            key={id}
-            variants={child}
-            whileHover={() => scaleChar()}
-            className="text-lg md:text-xl pr-1 text-neutral-200 pb-3"
-          >
-            {letter}
-          </motion.p>
-        );
-      })}
+      <motion.p
+        variants={child}
+        whileHover={() => scaleChar()}
+        className="text-lg md:text-2xl pr-1 text-neutral-200 pb-3"
+      >
+        {text}
+      </motion.p>
     </motion.div>
   );
 };
@@ -75,4 +68,4 @@ export default Animatedtitle;
 
 Animatedtitle.propTypes = {
   text: PropTypes.string,
-}
+};
