@@ -3,7 +3,6 @@ import { motion, spring } from "framer-motion";
 import { PropTypes } from "prop-types";
 
 const Animatedname = ({ text }) => {
-
   const container = {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
@@ -41,16 +40,12 @@ const Animatedname = ({ text }) => {
       initial="hidden"
       animate="visible"
     >
-
-
-          <motion.span
-
-            variants={child}
-            className="pr-1 text-2xl md:text-4xl subpixel-antialiased font-medium text-white"
-          >
-            {text}
-          </motion.span>
-
+      <motion.span
+        variants={child}
+        className="pr-1 text-xl md:text-4xl subpixel-antialiased font-medium text-white"
+      >
+        {text}
+      </motion.span>
     </motion.div>
   );
 };
@@ -58,5 +53,5 @@ const Animatedname = ({ text }) => {
 export default Animatedname;
 
 Animatedname.propTypes = {
-  text: PropTypes.string
-}
+  text: PropTypes.string,
+};

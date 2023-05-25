@@ -17,10 +17,10 @@ const highlights = sliceproject.map((proj, index) => {
             </p>
           </div>
           <div className="flex gap-x-2 items-center">
-            <a href={proj.live}>
+            <a  target="_blank" rel="noreferrer" href={proj.live}>
               <FiLink2 className="text-white text-xl opacity-75" />
             </a>
-            <a href={proj.github}>
+            <a  target="_blank" rel="noreferrer" href={proj.github}>
               <AiFillGithub className="text-white text-xl opacity-75" />
             </a>
           </div>
@@ -52,7 +52,7 @@ const HighlightedProjects = () => {
         <h2 className="text-white text-lg md:text-2xl font-[800] pb-3">
           Projects
         </h2>
-        <a href="/projects">
+        <a  target="_blank" rel="noreferrer" href="/projects">
           <p className="text-base resume opacity-75 text-white">
             See more projects
           </p>

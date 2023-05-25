@@ -11,7 +11,7 @@ const Contact = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.75 ,  ease: "easeInOut"}}
       >
-        <div className="mx-[24px] md:mx-[150px]">
+        <div className="mx-[24px] mt-10 md:mx-[150px]">
           <h2 className="text-white text-2xl font-[800] pb-3">
             Contact
           </h2>

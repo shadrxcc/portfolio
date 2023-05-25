@@ -24,6 +24,10 @@ body {
   transition: 0.7s ease-in-out;
 }
 
+.menu-icon {
+  transition: 0.7s ease-in-out;
+}
+
 .resume {
   animation: resume 1.3s ease-in-out infinite;
   transition: all 0.15s ease-in-out;
