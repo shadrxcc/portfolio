@@ -17,7 +17,7 @@ const Home = () => {
         className="mt-[5rem] flex flex-col gap-y-[3.5rem]"
       >
         <div className="mx-[24px]">
-          <img src={memoji} className="w-[8em] m-auto mb-5 rounded-full" alt="" />
+          <img src={memoji} className="w-[6em] m-auto mb-5 rounded-full" alt="" />
           <div className="">
             <Animatedname text={"Shadrach Akaade"} />
             <Animatedtitle text={"Frontend Engineer"} />
