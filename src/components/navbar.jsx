@@ -38,7 +38,7 @@ class Navbar extends Component {
                 this.state.clicked ? "#navbar active" : "#navbar"
               } bg-[#171717] text-white text-lg flex flex-col mt-[15em] gap-[2em] md:mt-0 items-center md:bg-inherit bg-[rgba(23, 23, 23)] w-[100%] right-[0px] h-[100vh] fixed md:relative md:top-0 top-[-100em] md:flex-row`}
             >
-              <Link onClick={this.buttonClick} to="/projects">
+              <Link to="/projects">
                 <motion.li
                   className="active text-white"
                   whileHover={() => scaleChar()}
@@ -46,7 +46,7 @@ class Navbar extends Component {
                   Projects
                 </motion.li>
               </Link>
-              <Link onClick={this.buttonClick} to="/about">
+              <Link to="/about">
                 <motion.li
                   className="active text-white"
                   whileHover={() => scaleChar()}
@@ -54,7 +54,7 @@ class Navbar extends Component {
                   About
                 </motion.li>
               </Link>
-              <Link onClick={this.buttonClick} to="/contact">
+              <Link to="/contact">
                 <motion.li
                   className="active text-white"
                   whileHover={() => scaleChar()}
