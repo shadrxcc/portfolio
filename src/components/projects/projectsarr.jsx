@@ -24,11 +24,11 @@ export const projectarr = [
   },
 
   {
-    title: "paynote",
-    description: "Payment tracking app",
-    stack: "RUBY ON RAILS",
-    live: "https://github.com/shadrxcc/paynote",
-    github: "https://github.com/shadrxcc/paynote",
+    title: "finance-fast",
+    description: "Fintech landing page",
+    stack: "REACTJS",
+    live: "https://finance-fast.vercel.app",
+    github: "https://github.com/shadrxcc/finance-fast",
   },
 
   {

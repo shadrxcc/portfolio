@@ -12,24 +12,20 @@ const highlights = sliceproject.map((proj, index) => {
       <div className="card shadow-sm hover-scale-0 md:hover:scale-[1.0] transition ease-in-out duration-300 rounded-[5px] justify-center h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
         <div className="flex items-center justify-between">
           <div>
-            <p className="text-white text-xl font-medium">
-              {proj.title}
-            </p>
+            <p className="text-white text-xl font-medium">{proj.title}</p>
           </div>
           <div className="flex gap-x-2 items-center">
-            <a  target="_blank" rel="noreferrer" href={proj.live}>
+            <a target="_blank" rel="noreferrer" href={proj.live}>
               <FiLink2 className="text-white text-xl opacity-75" />
             </a>
-            <a  target="_blank" rel="noreferrer" href={proj.github}>
+            <a target="_blank" rel="noreferrer" href={proj.github}>
               <AiFillGithub className="text-white text-xl opacity-75" />
             </a>
           </div>
         </div>
 
         <div>
-          <p className="text-white text-sm opacity-75">
-            {proj.description}
-          </p>
+          <p className="text-white text-sm opacity-75">{proj.description}</p>
         </div>
 
         <div>
@@ -44,15 +40,12 @@ const highlights = sliceproject.map((proj, index) => {
 
 const HighlightedProjects = () => {
   return (
-    <div
-      className="mx-[24px]"
-      
-    >
+    <div className="mx-[24px]">
       <div className="flex items-center justify-between">
         <h2 className="text-white text-lg md:text-2xl font-[800] pb-3">
           Projects
         </h2>
-        <a  target="_blank" rel="noreferrer" href="/projects">
+        <a href="/projects">
           <p className="text-base resume opacity-75 text-white">
             See more projects
           </p>
