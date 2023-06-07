@@ -2,9 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import Animatedname from "../components/animatedname";
 import Animatedtitle from "../components/animatedtitle";
-import HighlightedProjects from "../components/highlighted";
+
 import Animatedsummary from "../components/animatedsummary";
-import memoji from '../../src/assets/A2EC2EF0-570E-4C0B-AA79-8AA9D2858E4B.jpeg'
+import memoji from "../../src/assets/A2EC2EF0-570E-4C0B-AA79-8AA9D2858E4B.jpeg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -17,7 +18,11 @@ const Home = () => {
         className="mt-[5rem] flex flex-col gap-y-[3.5rem]"
       >
         <div className="mx-[24px]">
-          <img src={memoji} className="w-[6em] m-auto mb-5 rounded-full" alt="" />
+          <img
+            src={memoji}
+            className="w-[6em] m-auto mb-5 rounded-full"
+            alt=""
+          />
           <div className="">
             <Animatedname text={"Shadrach Akaade"} />
             <Animatedtitle text={"Frontend Engineer"} />
@@ -27,8 +32,15 @@ const Home = () => {
               text={`I create aesthetically pleasing, accessible, and functional web experiences.`}
             />
           </div>
+<div className="flex flex-col py-6 items-center">
+  
+          <Link to={`/projects`}>
+            <button className="text-base rounded-md text-center border-[1px] border-white py-4 px-6 opacity-75 text-white">
+              See more projects
+            </button>
+          </Link>
+</div>
         </div>
-        <HighlightedProjects/>
       </motion.div>
     </>
   );
