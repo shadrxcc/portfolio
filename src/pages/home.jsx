@@ -35,7 +35,7 @@ const Home = () => {
 <div className="flex flex-col py-6 items-center">
   
           <Link to={`/projects`}>
-            <button className="text-base rounded-md text-center border-[1px] border-white py-4 px-6 opacity-75 text-white">
+            <button className="text-base rounded-md text-center border-[1px] border-white py-2 px-6 opacity-75 text-white">
               Projects
             </button>
           </Link>
