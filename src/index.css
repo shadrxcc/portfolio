@@ -18,6 +18,10 @@ html body {
   font-family: Satoshi-Variable;
 }
 
+#navbar {
+  transition: 0.7s ease-in-out;
+}
+
 #navbar.active {
   top: -11em;
   padding: 2.5em 0 0;

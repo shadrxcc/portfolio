@@ -4,6 +4,8 @@ import { Sling as Hamburger } from "hamburger-react";
 import { scaleChar } from "./animatedtitle";
 import { motion } from "framer-motion";
 import { IoCloseOutline, IoMenuOutline } from "react-icons/io5";
+import { CgMenuRight } from 'react-icons/cg'
+import { VscClose } from 'react-icons/vsc'
 
 class Navbar extends Component {
   state = {
@@ -74,13 +76,13 @@ class Navbar extends Component {
             }}
           >
             {this.state.clicked ? (
-              <IoCloseOutline
+              <VscClose
                 className={`${
                   this.state.clicked ? "transition-all rotate-90" : ""
-                } text-white text-4xl menu-icon`}
+                } text-white text-2xl menu-icon`}
               />
             ) : (
-              <IoMenuOutline className="text-white text-4xl menu-icon" />
+              <CgMenuRight className="text-white text-2xl menu-icon" />
             )}
 
             {/* <Hamburger color="#fff" size={24} rounded /> */}
