@@ -79,10 +79,10 @@ class Navbar extends Component {
               <VscClose
                 className={`${
                   this.state.clicked ? "transition-all rotate-90" : ""
-                } text-white text-2xl menu-icon`}
+                } text-white text-3xl menu-icon`}
               />
             ) : (
-              <CgMenuRight className="text-white text-2xl menu-icon" />
+              <CgMenuRight className="text-white text-3xl menu-icon" />
             )}
 
             {/* <Hamburger color="#fff" size={24} rounded /> */}
