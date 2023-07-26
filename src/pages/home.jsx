@@ -36,7 +36,7 @@ const Home = () => {
   
           <Link to={`/projects`}>
             <button className="text-base rounded-md text-center border-[1px] border-white py-4 px-6 opacity-75 text-white">
-              See more projects
+              Projects
             </button>
           </Link>
 </div>
