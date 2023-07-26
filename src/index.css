@@ -32,6 +32,11 @@ html body {
   transition: 0.7s ease-in-out;
 }
 
+input {
+  -webkit-text-size-adjust: 100%;
+}
+
+
 .resume {
   animation: resume 1.3s ease-in-out infinite;
   transition: all 0.15s ease-in-out;
