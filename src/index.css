@@ -13,8 +13,6 @@
 html body {
   margin: auto;
   padding: 0;
-  width: 100vw;
-  
   overflow-x: hidden;
   background: rgba(23, 23, 23);
   font-family: Satoshi-Variable;
