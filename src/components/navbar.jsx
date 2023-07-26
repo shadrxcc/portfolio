@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Sling as Hamburger } from "hamburger-react";
 import { scaleChar } from "./animatedtitle";
 import { motion } from "framer-motion";
-import { IoCloseOutline, IoMenuOutline } from 'react-icons/io5'
+import { IoCloseOutline, IoMenuOutline } from "react-icons/io5";
 
 class Navbar extends Component {
   state = {
@@ -27,7 +27,7 @@ class Navbar extends Component {
       <div className="">
         <header className="transition-all bg-[#171717] z-10 py-0 px-[1.5rem] md:px-[3rem] flex justify-between items-center ease-in duration-300 w-full fixed h-20">
           <div>
-            <Link to="/">
+            <Link onClick={this.closeMenu} to="/">
               <h2 className="font-[600] text-white text-xl">shadrxcc.</h2>
             </Link>
           </div>
@@ -42,6 +42,7 @@ class Navbar extends Component {
                 <motion.li
                   className="active text-white"
                   whileHover={() => scaleChar()}
+                  onClick={this.closeMenu}
                 >
                   Projects
                 </motion.li>
@@ -50,6 +51,7 @@ class Navbar extends Component {
                 <motion.li
                   className="active text-white"
                   whileHover={() => scaleChar()}
+                  onClick={this.closeMenu}
                 >
                   About
                 </motion.li>
@@ -58,6 +60,7 @@ class Navbar extends Component {
                 <motion.li
                   className="active text-white"
                   whileHover={() => scaleChar()}
+                  onClick={this.closeMenu}
                 >
                   Contact
                 </motion.li>
@@ -70,9 +73,16 @@ class Navbar extends Component {
               this.buttonClick();
             }}
           >
-            {this.state.clicked ? <IoCloseOutline className={`${this.state.clicked ? 'transition-all rotate-90' : ''} text-white text-4xl menu-icon`}/>  : <IoMenuOutline className="text-white text-4xl menu-icon"/>}
-            
-            
+            {this.state.clicked ? (
+              <IoCloseOutline
+                className={`${
+                  this.state.clicked ? "transition-all rotate-90" : ""
+                } text-white text-4xl menu-icon`}
+              />
+            ) : (
+              <IoMenuOutline className="text-white text-4xl menu-icon" />
+            )}
+
             {/* <Hamburger color="#fff" size={24} rounded /> */}
           </div>
         </header>
