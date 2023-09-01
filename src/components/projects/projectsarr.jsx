@@ -1,5 +1,6 @@
 export const projectarr = [
   {
+    id: 1,
     title: "metabnb",
     description: "Luxury houses in the metaverse",
     stack: "REACTJS",
@@ -8,6 +9,7 @@ export const projectarr = [
   },
 
   {
+    id: 2,
     title: "hd_cars_rent",
     description: "CRUD car booking app",
     stack: "REACTJS + REDUX + RUBY ON RAILS",
@@ -16,6 +18,17 @@ export const projectarr = [
   },
 
   {
+    id: 3,
+    title: "artsy",
+    description: "A photo gallery for creators & collectors of art and photography",
+    stack: "REACTJS + FRAMER MOTION + CONTEXT API",
+    live: "https://artsy-dev.vercel.app",
+    github: "https://github.com/shadrxcc/artsy",
+    status: 'in development'
+  },
+
+  {
+    id: 4,
     title: "marvel-lp",
     description: "Marvel inspired landing page",
     stack: "REACTJS + MARVEL API",
@@ -24,6 +37,7 @@ export const projectarr = [
   },
 
   {
+    id: 5,
     title: "finance-fast",
     description: "Fintech landing page",
     stack: "REACTJS",
@@ -32,18 +46,20 @@ export const projectarr = [
   },
 
   {
-    title: "bookstore-cms",
-    description: "Track reading progress on your books",
-    stack: "REACTJS + REDUX",
-    live: "https://yinktech.github.io/Bookstore-app/",
-    github: "https://github.com/shadrxcc/Bookstore-app",
+    id: 6,
+    title: "x-rocket",
+    description: "SpaceX inspired page to showcase rockets",
+    stack: "REACTJS + SPACE-X API",
+    live: "https://x-rocket.vercel.app/",
+    github: "https://github.com/shadrxcc/Shadrach-Akaade-Frontend-Developer",
   },
 
-  {
-    title: "gamedeck",
-    description: "Game-based web app",
-    stack: "JAVASCRIPT",
-    live: "https://631a68d7231fa91c68c0f086--marvelous-arithmetic-da7874.netlify.app/",
-    github: "https://github.com/shadrxcc/gamedeck",
-  },
+  // {
+  //   id: 7,
+  //   title: "gamedeck",
+  //   description: "Game-based web app",
+  //   stack: "JAVASCRIPT",
+  //   live: "https://631a68d7231fa91c68c0f086--marvelous-arithmetic-da7874.netlify.app/",
+  //   github: "https://github.com/shadrxcc/gamedeck",
+  // },
 ];

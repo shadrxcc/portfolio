@@ -6,6 +6,7 @@ import Animatedtitle from "../components/animatedtitle";
 import Animatedsummary from "../components/animatedsummary";
 import memoji from "../../src/assets/A2EC2EF0-570E-4C0B-AA79-8AA9D2858E4B.jpeg";
 import { Link } from "react-router-dom";
+import av from '../../src/assets/avv.jpg'
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
       >
         <div className="mx-[24px]">
           <img
-            src={memoji}
+            src={av}
             className="w-[6em] m-auto mb-5 rounded-full"
             alt=""
           />
@@ -32,14 +33,13 @@ const Home = () => {
               text={`I create aesthetically pleasing, accessible, and functional web experiences.`}
             />
           </div>
-<div className="flex flex-col py-6 items-center">
-  
-          <Link to={`/projects`}>
-            <button className="text-base rounded-md text-center border-[1px] border-white py-2 px-6 opacity-75 text-white">
-              Projects
-            </button>
-          </Link>
-</div>
+          <div className="flex flex-col py-6 items-center">
+            <Link to={`/projects`}>
+              <button className="text-base rounded-md text-center border-[1px] border-white py-2 px-6 opacity-75 text-white">
+                Projects
+              </button>
+            </Link>
+          </div>
         </div>
       </motion.div>
     </>

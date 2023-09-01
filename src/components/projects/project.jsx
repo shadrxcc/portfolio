@@ -3,19 +3,17 @@ import { projectarr } from "./projectsarr";
 import { FiLink2 } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Project = () => {
-  const projectmap = projectarr.map((project, id) => {
+  const projectmap = projectarr.map((project) => {
     return (
-      <motion.div
-        key={id}
-      >
+      <div key={project.id}>
         <div className="card shadow-sm hover-scale-0 md:hover:scale-[1.1] transition ease-in-out duration-300 rounded-[5px] justify-center h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
           <div className="flex items-center justify-between">
-            <div>
-              <p className="text-white text-xl font-medium">
-                {project.title}
-              </p>
+            <div className="flex gap-x-2 items-center">
+              <p className="text-white text-xl font-medium">{project.title}</p>
+              <p className="text-xs text-white opacity-50">{project.status}</p>
             </div>
             <div className="flex gap-x-2 items-center">
               <a target="_blank" rel="noreferrer" href={project.live}>
@@ -34,12 +32,12 @@ const Project = () => {
           </div>
 
           <div>
-            <motion.p className="text-white  font-medium text-sm opacity-50">
+            <p className="text-white font-medium text-sm opacity-50">
               {project.stack}
-            </motion.p>
+            </p>
           </div>
         </div>
-      </motion.div>
+      </div>
     );
   });
   return (
