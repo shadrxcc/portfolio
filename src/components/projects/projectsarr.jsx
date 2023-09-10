@@ -24,7 +24,6 @@ export const projectarr = [
     stack: "REACTJS + FRAMER MOTION + CONTEXT API",
     live: "https://artsy-dev.vercel.app",
     github: "https://github.com/shadrxcc/artsy",
-    status: 'in development'
   },
 
   {

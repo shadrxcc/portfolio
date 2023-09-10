@@ -4,8 +4,8 @@ import { Sling as Hamburger } from "hamburger-react";
 import { scaleChar } from "./animatedtitle";
 import { motion } from "framer-motion";
 import { IoCloseOutline, IoMenuOutline } from "react-icons/io5";
-import { CgMenuRight } from 'react-icons/cg'
-import { VscClose } from 'react-icons/vsc'
+import { CgMenuRight } from "react-icons/cg";
+import { VscClose } from "react-icons/vsc";
 
 class Navbar extends Component {
   state = {
@@ -38,7 +38,7 @@ class Navbar extends Component {
               id="navbar"
               className={`${
                 this.state.clicked ? "#navbar active" : "#navbar"
-              } bg-[#171717] text-white text-lg flex flex-col mt-[15em] gap-[2em] md:mt-0 items-center md:bg-inherit bg-[rgba(23, 23, 23)] w-[100%] right-[0px] h-[100vh] fixed md:relative md:top-0 top-[-100em] md:flex-row`}
+              } bg-[#171717] text-white text-lg flex flex-col mt-[15em] gap-[2em] md:mt-0 items-center md:bg-inherit bg-[rgba(23, 23, 23)] w-[100%] right-[0px] h-[100vh] md:h-0 fixed md:relative md:top-0 top-[-100em] md:flex-row`}
             >
               <Link to="/projects">
                 <motion.li
