@@ -1,11 +1,11 @@
-import artsy from '../../assets/artsy.png'
-import finance from '../../assets/financefast.png'
-import drag from '../../assets/drag.png'
-import car from '../../assets/car.png'
-import rocket from '../../assets/rocket.png'
-import marvel from '../../assets/marvel.png'
-import moviebox from '../../assets/moviebox.png'
-import meta from '../../assets/metbnb.png'
+import artsy from '../../assets/artsy.svg'
+import finance from '../../assets/financefast.svg'
+import drag from '../../assets/drag.svg'
+import car from '../../assets/car.svg'
+import rocket from '../../assets/rocket.svg'
+import marvel from '../../assets/marvel.svg'
+import moviebox from '../../assets/moviebox.svg'
+import meta from '../../assets/metbnb.svg'
 
 export const projectarr = [
   {
