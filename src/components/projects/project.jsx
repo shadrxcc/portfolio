@@ -21,7 +21,7 @@ const Project = () => {
           ></div>
           <div className="flex items-center justify-between">
             <div className="flex gap-x-1 items-end">
-              <Link to={project.live}><p className="text-white text-lg font-medium">{project.title}</p></Link>
+            <a target="_blank" rel="noreferrer" href={project.live}><p className="text-white text-lg font-medium">{project.title}</p></a>
             </div>
             <div className="flex gap-x-2.5 items-center">
               <a target="_blank" rel="noreferrer" href={project.live}>
