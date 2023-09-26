@@ -19,6 +19,20 @@ const About = () => {
         </h2>
         <Summary />
         <Skillstack />
+        <div>
+        {/* <div className="card rounded-[5px] shadow-sm transition ease-in-out duration-300 h-fit flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
+          <div>
+            <p className="text-white text-xl font-medium">
+             Skills, Tools and Technologies
+            </p>
+          </div>
+          <div>
+            <p className="text-sm leading-8 text-neutral-200 opacity-50">
+            HTML5 + CSS + TAILWIND + JAVASCRIPT + REACTJS + REDUX + JEST + GSAP + RUBY + WORDPRESS + GIT + TDD + FIGMA + SUPABASE + FIREBASE + RESPONSIVE WEB DESIGN(RWD) + CROSS-BROWSER COMPATIBILITY + AGILE METHODOLOGIES
+            </p>
+          </div>
+        </div> */}
+      </div>
         <Resume />
       </motion.div>
     </>

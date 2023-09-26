@@ -6,7 +6,7 @@ import Animatedtitle from "../components/animatedtitle";
 import Animatedsummary from "../components/animatedsummary";
 import memoji from "../../src/assets/A2EC2EF0-570E-4C0B-AA79-8AA9D2858E4B.jpeg";
 import { Link } from "react-router-dom";
-import av from '../../src/assets/avv.jpg'
+// import av from '../../src/assets/avv.jpg'
 
 const Home = () => {
   return (
@@ -20,8 +20,8 @@ const Home = () => {
       >
         <div className="mx-[24px]">
           <img
-            src={av}
-            className="w-[6em] m-auto mb-5 rounded-full"
+            src={memoji}
+            className="w-[6em] m-auto mb-5 border-[3px] border-white rounded-full"
             alt=""
           />
           <div className="">

@@ -9,12 +9,21 @@ const Project = () => {
   const projectmap = projectarr.map((project) => {
     return (
       <div key={project.id}>
-        <div className="card shadow-sm hover-scale-0 md:hover:scale-[1.1] transition ease-in-out duration-300 rounded-[5px] justify-center h-[13em] flex flex-col gap-y-[2em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
+        <div className="card shadow-sm hover-scale-0 md:hover:scale-[1.03] transition ease-in-out h-[22rem] duration-300 rounded-[5px] justify-center flex flex-col gap-y-[1em] md:gap-y-[1.1em] p-4 bg-[#1e1e1e]">
+          <div
+            className="w-full rounded-[4px] h-[12rem] bg-cover bg-no-repeat bg-center"
+            style={{
+              backgroundImage: `url(${
+                project.snippet !== null && project.snippet
+              })`,
+              backgroundColor: "lightgray",
+            }}
+          ></div>
           <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <p className="text-white text-xl font-medium">{project.title}</p>
+            <div className="flex gap-x-1 items-end">
+              <Link to={project.live}><p className="text-white text-lg font-medium">{project.title}</p></Link>
             </div>
-            <div className="flex gap-x-2 items-center">
+            <div className="flex gap-x-2.5 items-center">
               <a target="_blank" rel="noreferrer" href={project.live}>
                 <FiLink2 className="text-white text-xl opacity-75" />
               </a>
@@ -30,23 +39,22 @@ const Project = () => {
             </p>
           </div>
 
-          <div>
-            <p className="text-white font-medium text-sm opacity-50">
-              {project.stack}
-            </p>
+          <div className="flex justify-between items-center">
+            <p className="text-white flex-1 text-xs opacity-50">{project.stack}</p>
+            {project.status && <p className="text-[8px] bg-zinc-800 text-white p-1.5 rounded">{project.status}</p>}
           </div>
         </div>
       </div>
     );
   });
   return (
-    <div className="mx-[24px] mt-10">
+    <div className="mx-[15px] lg:px-6 flex flex-col gap-y-4 mt-10">
       <div>
         <h2 className="text-white text-lg md:text-2xl font-semibold pb-3">
           Projects
         </h2>
       </div>
-      <div className="cards grid gap-8 md:grid-cols-3">{projectmap}</div>
+      <div className="cards grid gap-6 md:grid-cols-3">{projectmap}</div>
     </div>
   );
 };
