@@ -27,7 +27,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="">
-        <header className="transition-all bg-[#171717] z-10 py-0 px-[20px] sm:px-6 flex justify-between items-center ease-in duration-300 w-full mx-auto fixed h-20">
+        <header className="transition-all bg-[#171717] z-10 py-0 px-[20px] sm:px-6 lg:px-10 flex justify-between items-center ease-in duration-300 w-full mx-auto fixed h-20">
           <div>
             <Link onClick={this.closeMenu} to="/">
               <h2 className="font-[600] text-white text-xl">shadrxcc.</h2>
