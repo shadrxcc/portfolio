@@ -27,7 +27,7 @@ class Navbar extends Component {
   render() {
     return (
       <div className="">
-        <header className="transition-all bg-[#171717] z-10 py-0 px-[15px] lg:px-6 flex justify-between items-center ease-in duration-300 w-full fixed h-20">
+        <header className="transition-all bg-[#171717] z-10 py-0 px-[20px] sm:px-6 flex justify-between items-center ease-in duration-300 w-full mx-auto fixed h-20">
           <div>
             <Link onClick={this.closeMenu} to="/">
               <h2 className="font-[600] text-white text-xl">shadrxcc.</h2>
@@ -82,7 +82,7 @@ class Navbar extends Component {
                 } text-white text-3xl menu-icon`}
               />
             ) : (
-              <CgMenuRight className="text-white text-3xl menu-icon" />
+              <CgMenuRight className="text-white transition-all ease-in-out duration-300 text-3xl menu-icon" />
             )}
 
             {/* <Hamburger color="#fff" size={24} rounded /> */}

@@ -48,13 +48,13 @@ const Project = () => {
     );
   });
   return (
-    <div className="mx-[15px] lg:px-6 flex flex-col gap-y-4 mt-10">
+    <div className=" mx-5 lg:px-6 flex flex-col mt-10">
       <div>
-        <h2 className="text-white text-lg md:text-2xl font-semibold pb-3">
+        <h2 className="text-white text-2xl md:text-2xl font-semibold pb-3">
           Projects
         </h2>
       </div>
-      <div className="cards grid gap-6 md:grid-cols-3">{projectmap}</div>
+      <div className="cards grid gap-6 sm:grid-cols-2 md:grid-cols-3">{projectmap}</div>
     </div>
   );
 };

@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <motion.div
-        className="mx-[24px] mt-10"
+        className="mx-5 sm:mx-6 mt-10"
         initial={{ y: "100%", opacity: 0 }}
         animate={{ y: "0%", opacity: 1 }}
         exit={{ opacity: 0 }}
