@@ -1,13 +1,23 @@
-import artsy from '../../assets/artsy.svg'
-import finance from '../../assets/financefast.svg'
-import drag from '../../assets/drag.svg'
-import car from '../../assets/car.svg'
-import rocket from '../../assets/rocket.svg'
-import marvel from '../../assets/marvel.svg'
-import moviebox from '../../assets/moviebox.svg'
-import meta from '../../assets/metbnb.svg'
+import artsy from '../../assets/artsy.webp'
+import finance from '../../assets/financefast.webp'
+import drag from '../../assets/drag.webp'
+import car from '../../assets/car.webp'
+import rocket from '../../assets/rocket.webp'
+import marvel from '../../assets/marvel.webp'
+import moviebox from '../../assets/moviebox.webp'
+import meta from '../../assets/metbnb.webp'
+import helpmeout from '../../assets/helpmeout.webp'
 
 export const projectarr = [
+  {
+    id: 0,
+    title: "helpmeout",
+    description: "Screen recording chrome extension plugin",
+    stack: "JAVASCRIPT + CHROME SCREEN CAPTURE API",
+    github: "https://github.com/shadrxcc/HelpMeOut-ext",
+    snippet: helpmeout
+  },
+
   {
     id: 1,
     title: "metabnb",
@@ -23,7 +33,7 @@ export const projectarr = [
     title: "hd_cars_rent",
     description: " Fun car reservation experience",
     stack: "REACTJS + REDUX + RUBY ON RAILS",
-    live: "https://hd-cars-rent-git-dev-shadrxcc.vercel.app/",
+    // live: "https://hd-cars-rent-git-dev-shadrxcc.vercel.app/",
     github: "https://github.com/shadrxcc/hd_cars_rent",
     status: '🚧 DEVELOPMENT',
     snippet: car

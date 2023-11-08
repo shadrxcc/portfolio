@@ -21,12 +21,18 @@ const Project = () => {
           ></div>
           <div className="flex items-center justify-between">
             <div className="flex gap-x-1 items-end">
-            <a target="_blank" rel="noreferrer" href={project.live}><p className="text-white text-lg font-medium">{project.title}</p></a>
+              <a target="_blank" rel="noreferrer" href={project.live}>
+                <p className="text-white text-lg font-medium">
+                  {project.title}
+                </p>
+              </a>
             </div>
             <div className="flex gap-x-2.5 items-center">
-              <a target="_blank" rel="noreferrer" href={project.live}>
-                <FiLink2 className="text-white text-xl opacity-75" />
-              </a>
+              {project.live ? (
+                <a target="_blank" rel="noreferrer" href={project.live}>
+                  <FiLink2 className="text-white text-xl opacity-75" />
+                </a>
+              ) : null}
               <a target="_blank" rel="noreferrer" href={project.github}>
                 <AiFillGithub className="text-white text-xl opacity-75" />
               </a>
@@ -40,8 +46,14 @@ const Project = () => {
           </div>
 
           <div className="flex justify-between items-center">
-            <p className="text-white flex-1 text-xs opacity-50">{project.stack}</p>
-            {project.status && <p className="text-[8px] bg-zinc-800 text-white p-1.5 rounded">{project.status}</p>}
+            <p className="text-white flex-1 text-xs opacity-50">
+              {project.stack}
+            </p>
+            {project.status && (
+              <p className="text-[8px] bg-zinc-800 text-white p-1.5 rounded">
+                {project.status}
+              </p>
+            )}
           </div>
         </div>
       </div>
@@ -54,7 +66,9 @@ const Project = () => {
           Projects
         </h2>
       </div>
-      <div className="cards grid gap-6 sm:grid-cols-2 md:grid-cols-3">{projectmap}</div>
+      <div className="cards grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        {projectmap}
+      </div>
     </div>
   );
 };
