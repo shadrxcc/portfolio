@@ -7,10 +7,19 @@ import marvel from '../../assets/marvel.webp'
 import moviebox from '../../assets/moviebox.webp'
 import meta from '../../assets/metbnb.webp'
 import helpmeout from '../../assets/helpmeout.webp'
+import getcrib from '../../assets/getcrib.png'
 
 export const projectarr = [
   {
     id: 0,
+    title: "GetCrib",
+    live: "https://getcrib.co",
+    description: "Apartment rental platform",
+    stack: "NEXTJS + TYPESCRIPT + REDUX",
+    snippet: getcrib
+  },
+  {
+    id: 1,
     title: "helpmeout",
     description: "Screen recording chrome extension plugin",
     stack: "JAVASCRIPT + CHROME SCREEN CAPTURE API",
@@ -19,7 +28,7 @@ export const projectarr = [
   },
 
   {
-    id: 1,
+    id: 2,
     title: "metabnb",
     description: "Luxury houses in the metaverse",
     stack: "REACTJS",
@@ -29,7 +38,7 @@ export const projectarr = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "hd_cars_rent",
     description: " Fun car reservation experience",
     stack: "REACTJS + REDUX + RUBY ON RAILS",
@@ -40,7 +49,7 @@ export const projectarr = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "artsy",
     description: "Discover 10,000+ untold stories in photos.",
     stack: "REACTJS + FRAMER MOTION + CONTEXT API",
@@ -50,7 +59,7 @@ export const projectarr = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "marvel-lp",
     description: "Marvel-comics inspired web experience",
     stack: "REACTJS + MARVEL API",
@@ -60,7 +69,7 @@ export const projectarr = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "finance-fast",
     description: "Simplify global transactions with FinanceFast",
     stack: "REACTJS",
@@ -70,7 +79,7 @@ export const projectarr = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "x-rocket",
     description: "Technical Assessment: SpaceX-inspired rocket innovations",
     stack: "REACTJS + SPACE-X API",
@@ -80,7 +89,7 @@ export const projectarr = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "moviebox",
     description: "Discover your favourite movies",
     stack: "REACTJS + TMDB API",
@@ -90,7 +99,7 @@ export const projectarr = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: "drag n' drop",
     description: "Drag and drop images wherever you like",
     stack: "REACTJS + FIREBASE",
